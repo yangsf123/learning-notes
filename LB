@@ -53,4 +53,10 @@
 - 软件
   LVS(Linux Virtual Server)、Nginx
   
-LVS: Linux virtual Server(www.linuxvirtualserver.org)
+LVS: Linux virtual Server(www.linuxvirtualserver.org) 主要用于服务器集群的负载均衡
+特点: 
+  - 工作在网络层
+  - 可以实现高性能、高可用的服务器集群技术
+  - 廉价，可以把许多低性能的服务器组合在一起形成一个超级服务器
+  - 易用，配置简单，有多种负载均衡方法
+  - 稳定可靠，即使集群的某台服务器
