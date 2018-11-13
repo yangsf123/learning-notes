@@ -1,0 +1,29 @@
+# Git command
+
+git checkout -b branch  |   create a branch named branch
+git add filename(s)     |   暂存文件，准备提交至仓库
+git commit              |   将暂存的变更保存至仓库
+git checkout branch     |   切换到指定分支
+git merge branch        |   将branch分支合并到当前分支
+git branch --delete     |   移除本地分支
+git branch -D           |   移除不包含并入的提交的本地分支
+git clone URL           |   下载一份远程仓库的副本
+git log                 |   查看项目历史记录
+git reflog              |   查看分支的详细历史记录
+git checkout commit     |   切换到另一个本地分支
+git cherry-pick commit  |   将提交从一个分支复制到另一个分支
+git reset --merge ORIG_HEAD  |    移除当前分支中所有在最近一次合并中引入的提交
+git checkout --filename |   还原已变更但尚未提交的文件
+git reset HEAD filename |   从暂存区移除提出的文件修改
+git reset --hard HEAD   |   将所有已变更的文件还原到之前保存的状态
+git reset commit        |   取消暂存在这个提交之前的所有提交中的变更
+git rebase --interactive commit |   编辑，或压缩提交后的所有提交
+git rebase --continue   |   在解决合并冲突后，继续编辑过程
+git revert commit       |   取消应用指定提交中的变更，创建一个共享友好的历史记录还原
+git log --oneline --graph |   显示分支图形化历史记录
+git revert --mainline 1 commit  |   反转一个合并提交
+git branch --contains commit  |   列出所有包含指定提交对象的分支
+git revert --no-commit last_commit_to_keep newest_commit_to_reject | 使用一个提交反转一组提交，而不是为每个撤销的提交都创建一个对象
+git filter -branch      |     从仓库中永久移除文件
+git reflog expire       |   忽略详细历史记录，仅使用存储的提交信息
+git gc --prune=now      |   运行垃圾回收器并确保所有为提交的变更从本地内存中移除
